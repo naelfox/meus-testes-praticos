@@ -1,0 +1,279 @@
+/* Configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+
+a {
+    font-family: 'Inconsolata', monospace;
+    color: #31f1ff;
+}
+
+/*Barra de Navegação*/
+
+nav {
+    background-color: #213637;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+#logo h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: -0.038em;
+}
+
+#logo span {
+    color: #31f1ff;
+}
+
+#logo img {
+    width: 80px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul {
+    padding: 20px;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+button {
+    color: #213637;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #31f1ff;
+    border-radius: 50px;
+    border-style: none;
+    padding: 20px;
+}
+
+/*Início*/
+#inicio {
+    background-image: url(../imagens/cover.png);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    display: flex;
+    padding: 10px;
+}
+
+.img-area img {
+    width: 200px;
+    margin: 30px 20px 0 200px;
+}
+
+.text-area {
+    color: white;
+    margin: 80px 200px 0 10px;
+}
+
+.text-area button {
+    margin: 20px;
+}
+
+/*Best-Sellers*/
+#seller {
+    background-color: #0f949b;
+    min-height: 500px;
+    padding: 10px;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.center-content h1 {
+    color: #213637;
+    padding: 30px 0;
+    font-size: 50px;
+}
+
+.center-content img {
+    width: 300px;
+    padding: 30px;
+}
+
+/*O Livro*/
+#book {
+    background-image: url(../imagens/cover-book.png);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    padding: 10px;
+}
+
+.content-book {
+    color: white;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.content-book img {
+    width: 150px;
+
+}
+
+.content-book h1, img, h2 {
+    padding: 20px;
+}
+
+/*Formulário*/
+
+#form {
+    background-color: #b9b9b9;
+    min-height: 500px;
+    display: flex;
+    padding: 10px;
+}
+
+.book-img img {
+    width: 200px;
+    margin: 30px 20px 0 200px;
+}
+
+.form-area {
+    color: #213637;
+    margin: 60px 200px 0 30px;
+}
+
+.form-area input {
+
+    padding: 10px 35px;
+    margin: 10px 50px;
+    border-style: none;
+    font-size: 15px;
+}
+
+h3 {
+    padding: 10px;
+}
+
+
+/*Rodapé*/
+
+footer {
+    background-color: #213637;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color: white;
+    font-size: 15px;
+
+}
+
+
+/*Formatação em outros tamanhos de tela*/
+
+
+@media (max-width: 1102px) {
+    .book-img img {
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 870px) {
+    .img-area img {
+        width: 150px;
+        margin: auto;
+    }
+
+    .text-area {
+
+        margin: auto;
+    }
+
+    .center-content img {
+        width: 186px;
+
+    }
+
+    .book-img img {
+        width: 138px;
+        margin: auto;
+    }
+
+    #form {
+
+        display: block;
+        text-align: center;
+        min-height: 346px;
+    }
+
+    .form-area {
+    
+        margin: auto;
+      }
+
+  
+
+}
+
+@media (max-width: 560px) {
+    .book-img img {
+        display: none;
+    }
+
+   
+
+    .form-area {
+
+        margin: 20px auto;
+    }
+
+}
+
+
+
+@media (max-width: 476px) {
+    #inicio {
+
+        display: block;
+        text-align: center;
+    }
+
+    #logo img {
+        display: none;
+    }
+    .center-content h1 {
+  
+        font-size: 26px;
+      }
+
+}

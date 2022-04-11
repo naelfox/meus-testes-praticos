@@ -1,0 +1,298 @@
+/*Configurações globais*/
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Source Sans Pro';
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+p {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+a {
+	color: #4f4f4f;
+	text-decoration: none;
+
+}
+
+button {
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #f38323;
+	border-radius: 20px;
+	border-style: none;
+	margin: 10px;
+	padding: 10px 20px;
+}
+
+/* barra de navegação */
+
+#nav-bar {
+	text-transform: uppercase;
+	display: flex;
+	background-color: white;
+	padding: 20px 0;
+}
+
+
+#logo {
+	margin-left: 120px;
+	margin-right: 245px;
+
+}
+
+.pages {
+	padding-top: 31px;
+}
+
+li {
+	display: inline;
+	margin-right: 25px;
+}
+
+li a {
+	color: #616161;
+	font-weight: 500;
+}
+
+li img {
+	width: 200px;
+}
+
+/* Bem-vindo*/
+
+#bem-vindo {
+	color: white;
+	text-align: center;
+	height: 500px;
+	background-image: url("../imagens/banner.jpg");
+	background-size: cover;
+}
+
+.conteudo {
+	padding-top: 170px;
+	height: auto;
+}
+
+.conteudo p {
+	text-shadow: 1px 1px #000;
+	width: 805px;
+	margin: 20px 0;
+	margin: 10px auto 10px auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+
+/* Área 2*/
+.area-2-box {
+	text-align: center;
+	width: 250px;
+	padding: 30px;
+}
+
+.area-2-box img {
+	width: 120px;
+	margin: 10px;
+}
+
+.area-2-box h1 {
+	text-transform: capitalize;
+}
+
+.area-2-box p {
+	font-weight: 200;
+}
+
+/* Sobre*/
+#sobre img {
+	width: 500px;
+	margin: 20px 100px 20px 20px;
+
+}
+
+.flex-sobre {
+	display: flex;
+	justify-content: initial;
+	background-color: #f1f3f4;
+	min-height: 500px;
+}
+
+.text-area {
+	width: 750px;
+	padding: 20px 80px 0 0;
+	margin: 130px 0 0 100px;
+}
+
+.text-area h1 {
+	text-transform: uppercase;
+}
+
+.text-area p {
+	font-weight: 200;
+	margin: 15px 0 30px 0;
+
+}
+
+.text-area button {
+	margin: 10px;
+}
+
+/* Blog*/
+#noticias h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.blog {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.blog-box {
+	background-color: #f1f3f4;
+	width: 370px;
+	margin: 20px;
+}
+
+.blog-box img {
+	width: 370px;
+}
+
+.blog-box h2, p {
+	margin: 10px;
+}
+
+/* Rodapé*/
+footer {
+	color: white;
+	text-align: center;
+	background-color: #1d1d1d;
+	padding: 25px;
+	margin-top: 20px;
+}
+
+
+
+/*Responsividade de telas*/
+
+/* Largura máxima 1294 px*/
+@media(max-width: 1294px) {
+	#sobre img {
+		width: 270px;
+	}
+
+	li {
+		display: inline;
+		margin-right: 5px;
+	}
+
+	li a {
+		font-size: 14px;
+	}
+}
+
+
+/* Largura máxima 1080 px*/
+@media (max-width: 1080px) {
+
+	#logo {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	#nav-bar {
+		display: grid;
+	}
+
+	#logo {
+		margin-left: 30px;
+		margin-right: 0;
+	}
+
+	li img {
+		width: 140px;
+	}
+
+	.pages {
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 4px;
+	}
+
+	.flex-sobre {
+		display: grid;
+	}
+
+	#sobre img {
+		margin: 20px 100px 20px 70px;
+
+	}
+
+	.blog-box {
+		width: 276px;
+	}
+
+	.blog-box img {
+		width: 276px;
+	}
+
+}
+
+
+/* Largura máxima 812 px*/
+@media (max-width: 812px) {
+
+	.conteudo p {
+		width: 80%;
+	}
+
+	.text-area {
+		width: 80%;
+		padding: 20px 0 0 0;
+		margin: 30px 0 0 40px;
+	}
+
+}
+
+/* Largura máxima 750 px*/
+@media(max-width:750px) {
+
+	.flex {
+		display: grid;
+	}
+
+	.blog {
+		display: grid;
+	}
+}
+
+/* Largura máxima 400 px*/
+@media(max-width:400px) {
+
+	#sobre img {
+		display: none;
+	}
+
+}
